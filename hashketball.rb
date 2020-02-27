@@ -222,7 +222,7 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-   largest_shoe = 0
+  most_points= 0
   corresponding_rebounds = 0
   game_hash.each do |location, info|
     game_hash[location][:players].each do |stats_hash|

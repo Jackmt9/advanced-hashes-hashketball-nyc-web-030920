@@ -189,8 +189,8 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
-  # game_hash.each do |location, info|
-  #   game_hash[location, ]
+  game_hash.each do |location, info|
+    game_hash[location, ]
 end
 
 def big_shoe_rebounds

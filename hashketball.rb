@@ -226,8 +226,8 @@ def most_points_scored
   corresponding_name = ""
   game_hash.each do |location, info|
     game_hash[location][:players].each do |stats_hash|
-      if stats_hash[:points] > largest_shoe
-        largest_shoe = stats_hash[:shoe]
+      if stats_hash[:points] > most_points
+        most_points = stats_hash[:points]
         corresponding_rebounds = stats_hash[:rebounds]
       end
     end

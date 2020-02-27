@@ -228,11 +228,11 @@ def most_points_scored
     game_hash[location][:players].each do |stats_hash|
       if stats_hash[:points] > most_points
         most_points = stats_hash[:points]
-        corresponding_rebounds = stats_hash[:rebounds]
+        corresponding_name = stats_hash[:player_name]
       end
     end
   end
-  corresponding_rebounds
+  corresponding_name
 end
 
 def winning_team(team_name)

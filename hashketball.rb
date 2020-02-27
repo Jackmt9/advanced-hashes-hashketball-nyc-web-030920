@@ -197,7 +197,7 @@ def big_shoe_rebounds
   largest_shoe = 0
   corresponding_rebounds = 0
   game_hash.each do |location, info|
-    location[:players].each do |stats_hash|
+    game_hash[location][:players].each do |stats_hash|
       if stats_hash[:shoe] > largest_shoe
         largest_shoe = stats_hash[:shoe]
         corresponding_rebounds = stats_hash[:rebounds]

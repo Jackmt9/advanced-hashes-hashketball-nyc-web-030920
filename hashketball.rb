@@ -193,22 +193,7 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  counter1 = 0
-  counter2 = 0
-  largest_shoe = 0
-  corresponding_rebound = 0
-  while counter2 < game_hash.length
-    while counter1 < game_hash[counter2][:players].length
-      if game_hash[counter2][:players][counter1][:shoe] > largest_shoe
-      largest_shoe = game_hash[counter2][:players][counter1][:shoe]
-      corresponding_rebound = game_hash[counter2][:players][counter1][:rebounds]
-      binding.pry
-      end
-      counter1 += 1
-    end
-    counter2 += 1
-  end
-  return corresponding_rebound
+  game_hash.each do |location, 
 end
 
 def most_points_scored(player_name)

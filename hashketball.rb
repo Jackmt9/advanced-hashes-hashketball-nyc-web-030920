@@ -193,7 +193,10 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  game_hash.each do |location, 
+  game_hash.each do |location, info|
+    info.each do |details_key, details|
+      when details_key == :players
+        :players.each 
 end
 
 def most_points_scored(player_name)

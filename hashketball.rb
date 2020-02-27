@@ -190,7 +190,9 @@ end
 
 def player_stats(player_name)
   game_hash.each do |location, info|
-    game_hash[location, ]
+    game_hash[location][:players].each do |stats_hash|
+      if stats_hash[:player_name] == player_name
+        stats_hash[]
 end
 
 def big_shoe_rebounds

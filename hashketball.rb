@@ -195,7 +195,16 @@ def player_stats(player_name)
       if stats_hash[:player_name] == player_name
         default_hash[:assists] = stats_hash[:assits]
         default_hash[:blocks] = stats_hash[:blocks]
-        default_hash[:number] = stats_hash[:assits]
+        default_hash[:number] = stats_hash[:number]
+        default_hash[:points] = stats_hash[:points]
+        default_hash[:rebounds] = stats_hash[:rebounds]
+        default_hash[:shoe] = stats_hash[:shoe]
+        default_hash[:slam_dunks] = stats_hash[:slam_dunks]
+        default_hash[:steals] = stats_hash[:steals]
+      end
+    end
+  end
+  return default_hash
 end
 
 def big_shoe_rebounds

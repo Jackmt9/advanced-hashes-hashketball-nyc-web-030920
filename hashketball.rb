@@ -193,7 +193,7 @@ def player_stats(player_name)
   game_hash.each do |location, info|
     game_hash[location][:players].each do |stats_hash|
       if stats_hash[:player_name] == player_name
-        default_hash[:assists] = stats_hash[:assits]
+        default_hash[:assists] = stats_hash[:assists]
         default_hash[:blocks] = stats_hash[:blocks]
         default_hash[:number] = stats_hash[:number]
         default_hash[:points] = stats_hash[:points]

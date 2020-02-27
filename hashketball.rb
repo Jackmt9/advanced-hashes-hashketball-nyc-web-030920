@@ -235,7 +235,7 @@ def most_points_scored
   corresponding_name
 end
 
-def winning_team(team_name)
+def winning_team
   
 end
 

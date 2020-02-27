@@ -189,10 +189,13 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
+  default_hash = {:assists=>1, :blocks=>7, :number=>4, :points=>10, :rebounds=>1, :shoe=>18, :slam_dunks=>2, :steals=>2}
   game_hash.each do |location, info|
     game_hash[location][:players].each do |stats_hash|
       if stats_hash[:player_name] == player_name
-        stats_hash[]
+        default_hash[:assists] = stats_hash[:assits]
+        default_hash[:blocks] = stats_hash[:blocks]
+        default_hash[:number] = stats_hash[:assits]
 end
 
 def big_shoe_rebounds

@@ -247,8 +247,16 @@ def winning_team
   home_score > away_score ? game_hash[:home][:team_name] : game_hash[:away][:team_name]
 end
 
-def players_with_longest_name(player_name)
-  
+def players_with_longest_name
+  longest_name = 0
+  game_hash.each do |location, info|
+    game_hash[location][:players].each do |stats_hash|
+      if stats_hash[:player_name].size > longest_name.size
+        longest_name = stats_hash[:player_name]
+      end
+    end
+  end
+  longest_name
 end
 
 def long_name_steals_a_ton(player_name)
